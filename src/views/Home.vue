@@ -53,10 +53,22 @@ export default {
 html{
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   background: var(--background);
 }
+body::-webkit-scrollbar{
+  width: 1rem;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--accent);
+  border-radius: 1rem;
+}
+body::-webkit-scrollbar-track{
+  background: none;
+}
+
 .container{
   position: relative;
   width: 100%;

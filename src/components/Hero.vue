@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content">
             <h1>Fastest<br> Delivery<br>Service</h1>
-            <p>Learn more</p>
+            <a href="#why-join">Learn More</a>
             <i class="fas fa-chevron-down"></i>
         </div>
         <div class="social">

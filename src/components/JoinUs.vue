@@ -1,10 +1,15 @@
 <template>
     <div class="join-container">
+        <h1>Apply now!</h1>
         <div class="driver">
             <button @click="() => {this.driver = !this.driver}"><span>Become a driver</span></button>
             <button @click="() => {this.partner = !this.partner}"><span>Become a Partner</span></button>
-            <PopUp @pressed="pressed" v-if="driver"/>
-            <Partner @partner-pressed="partnerPressed" v-if="partner"/>
+            <transition name="fade">
+                <PopUp @pressed="pressed" v-if="driver"/>
+            </transition>
+            <transition name="fade">
+                <Partner @partner-pressed="partnerPressed" v-if="partner"/>
+            </transition>
         </div>
     </div>
 </template>
@@ -42,12 +47,17 @@
 <style scoped>
     .join-container{
         width: 100%;
-        padding: 4rem 8rem;
+        padding: 6rem 8rem;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background: var(--background);
+    }
+    .join-container>h1{
+        font-size: 4rem;
+        color: var(--accent);
+        font-weight: 500;
     }
     button{
         display: inline-block;
@@ -73,4 +83,11 @@
     /* button:hover span{
         transform: scale(0.9);
     } */
+    .slide-fade-enter-active, .fade-leave-active {
+        transition: opacity .5s ease;
+    }
+
+    .fade-enter-from, .fade-leave-to {
+        opacity: 0;
+    }
 </style>

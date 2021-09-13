@@ -1,6 +1,11 @@
 <template>
   <div>
-    <router-view/>
+    <!-- <router-view v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view> -->
+    <router-view />
   </div>
 </template>
 <script>
@@ -13,5 +18,7 @@ export default {
 }
 </script>
 <style>
-  
+  html{
+    scroll-behavior: smooth;
+  }
 </style>

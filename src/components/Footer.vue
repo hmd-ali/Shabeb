@@ -18,6 +18,15 @@
                 <router-link to="/privacy">Privacy Policy</router-link>
                 <router-link to="/terms">Terms and Conditions</router-link>
             </div>
+            <div class="partners-container">
+                <h1>Our Other Businesses</h1>
+                <div class="partners">
+                    <a href="https://presentail.com/">Presentail</a>
+                </div>
+            </div>
+            <div class="copyrights">
+                <h1>&copy; Copyrights Reserved Shabeb 2021</h1>
+            </div>
         </div>
         
     </div>
@@ -82,6 +91,13 @@
         justify-content: center;
         align-items: left;
     }
+    .footer-container .links-container{
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
     #nav h1{
         margin-bottom: 2rem;
     }
@@ -96,6 +112,36 @@
         color: var(--accent);
     }
     #nav a:hover{
+        color: var(--accent);
+    }
+    .copyrights-container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .copyrights{
+        position: relative;
+        text-align: center;
+    }
+    .copyrights h1{
+        font-size: 2rem;
+        font-weight: 400;
+        /* margin-bottom: 2rem; */
+    }   
+    .partners{
+        text-align: center;
+    }
+    .partners-container h1{
+        margin-bottom: 2rem;
+    }
+    .partners a{
+        font-size: 3rem;
+        text-decoration: none;
+        color: var(--background);
+        display: inline-block;
+    }
+    .partners a:hover{
         color: var(--accent);
     }
 </style>
