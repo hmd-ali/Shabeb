@@ -1,5 +1,5 @@
 <template>
-    <div class="join-container">
+    <div class="join-container" id="join-us">
         <h1>Apply now!</h1>
         <div class="driver">
             <button @click="() => {this.driver = !this.driver}"><span>Become a driver</span></button>

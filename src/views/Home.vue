@@ -6,6 +6,7 @@
       id="tsparticles"
       :options="options"
     />
+    <Header />
     <Hero />
     <Why />
     <JoinUs />
@@ -19,6 +20,7 @@ import Hero from '../components/Hero.vue'
 import Why from '../components/Why.vue'
 import Footer from '../components/Footer.vue'
 import JoinUs from '../components/JoinUs.vue'
+import Header from '../components/Header.vue'
 import options from '../options'
 
 export default {
@@ -27,7 +29,8 @@ export default {
     Hero,
     Why,
     Footer,
-    JoinUs
+    JoinUs,
+    Header,
   },
   setup(){
     return{

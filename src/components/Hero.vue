@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container" id="home">
         <div class="content">
             <h1>Fastest<br> Delivery<br>Service</h1>
-            <a href="#why-join">Learn More</a>
+            <a id="learn" href="#about">Learn More</a>
             <i class="fas fa-chevron-down"></i>
         </div>
         <div class="social">
@@ -89,5 +89,15 @@
     .social ul li:hover a{
         transform: scale(1.1);
         color:var(--accent);
+    }
+    #learn{
+        text-decoration: none;
+        font-size: 2rem;
+        margin-top: 2rem;
+        color: var(--bacground);
+
+    }
+    #learn:hover{
+        color: var(--accent);
     }
 </style>

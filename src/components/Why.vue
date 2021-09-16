@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="why-join">
+    <div class="container" id="about">
         <div class="mission">
             <img src="../assets/growth.svg" alt="">
             <p>Here at Shabeb, our <span>mission</span> is to help you <span>grow</span> your <span>business</span> one delivery at a time. We're here to take away the stress of making sure your deliveries arrive both on <span>time</span> and in <span>good condition</span>. The best part is that you'll immediately notice <span>savings</span> when you switch to our <span>solutions</span>.</p>

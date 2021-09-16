@@ -1,4 +1,5 @@
 <template>
+    <Header style="background:white;" />
     <div class="terms-container">
         <div class="title">
             <h1>Terms of Use</h1>
@@ -103,11 +104,13 @@
 
 <script>
     import Footer from '../components/Footer.vue'
+    import Header from '../components/Header.vue'
 
     export default {
         name: 'Terms',
         components:{
             Footer,
+            Header,
         }
     }
 </script>
@@ -120,6 +123,7 @@
         align-items: center;
         padding: 4rem 4rem;
         color: var(--color-primary);
+        padding-top: 15rem;
     }
     .terms-container .title{
         margin: 3rem;

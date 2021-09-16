@@ -1,4 +1,5 @@
 <template>
+    <Header style="background:white;border-bottom-right-radius:3rem;border-bottom-left-radius:3rem;" />
     <div class="privacy-container">
         <div class="title">
             <h1>Privacy Policy</h1>
@@ -122,11 +123,13 @@
 <script>
 
     import Footer from '../components/Footer.vue'
+    import Header from '../components/Header.vue'
 
     export default {
         name: 'Privacy',
         components:{
             Footer,
+            Header
         },
     }
 </script>
@@ -139,6 +142,7 @@
         align-items: center;
         padding: 4rem 4rem;
         color: var(--color-primary);
+        padding-top: 15rem;
     }
     .privacy-container .title{
         margin: 3rem;
