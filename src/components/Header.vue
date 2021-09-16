@@ -71,4 +71,7 @@
     .navigation a span{
         font-size: 2rem;
     }
+    .test{
+        color: blue;
+    }
 </style>
