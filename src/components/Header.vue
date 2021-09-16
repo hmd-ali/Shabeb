@@ -74,5 +74,6 @@
     .test{
         color: blue;
         color: red;
+        color: white;
     }
 </style>
