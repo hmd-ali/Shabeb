@@ -73,5 +73,6 @@
     }
     .test{
         color: blue;
+        color: red;
     }
 </style>
