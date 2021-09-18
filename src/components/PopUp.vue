@@ -154,5 +154,31 @@
         display: inline-block;
         transform: scale(.98);
     }
+    @media screen and (max-width:768px) and (min-width:480px){
+        .popup-container .form{
+            padding: 4rem;
+        }
+        .popup-container .form form .form-item{
+            flex-direction: column;
+            align-items: center;
+            width: unset;
+        }
+        .popup-container .form form .form-item label{
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width:479px){
+        .popup-container .form{
+            padding: 2rem;
+        }
+        .popup-container .form form .form-item{
+            flex-direction: column;
+            align-items: center;
+            width: unset;
+        }
+        .popup-container .form form .form-item label{
+            display: inline-block;
+        }
+    }
 
 </style>

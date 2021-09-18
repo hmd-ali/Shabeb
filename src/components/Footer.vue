@@ -144,4 +144,84 @@
     .partners a:hover{
         color: var(--accent);
     }
+    @media screen and (max-width:768px) and (min-width:480px){
+        .footer-container{
+            padding: 1rem 1rem;
+        }
+        .footer-container .social .logo{
+            width: 6rem;
+            position: relative;
+        }
+        .footer-container .social .logo img{
+            width: 100%;
+        }
+        .footer-container .social .links ul{
+            font-size: 3rem;
+            width: 20rem;
+        }
+        #nav h1{
+            font-size: 1.6rem;
+        }
+        #nav a{
+            font-size: 1.2rem;
+        }
+        .partners-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .partners-container h1{
+            display: inline-block;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .partners-container .partners a{
+            font-size: 1.5rem;
+        }
+        .copyrights h1{
+            font-size: 1.4rem;
+        }
+    }
+    @media screen and (max-width:479px){
+        .footer-container{
+            padding: 1rem 1rem;
+        }
+        .footer-container .social .logo{
+            width: 6rem;
+            position: relative;
+        }
+        .footer-container .social .logo img{
+            width: 100%;
+        }
+        .footer-container .social .links ul{
+            font-size: 3rem;
+            width: 20rem;
+        }
+        #nav h1{
+            font-size: 1.6rem;
+        }
+        #nav a{
+            font-size: 1.2rem;
+        }
+        .partners-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .partners-container h1{
+            display: inline-block;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        .partners-container .partners a{
+            font-size: 1.5rem;
+        }
+        .copyrights h1{
+            font-size: 1.4rem;
+        }
+    }
 </style>

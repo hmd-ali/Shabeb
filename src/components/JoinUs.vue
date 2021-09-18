@@ -59,6 +59,11 @@
         color: var(--accent);
         font-weight: 500;
     }
+    .driver{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
     button{
         display: inline-block;
         outline: none;
@@ -89,5 +94,18 @@
 
     .fade-enter-from, .fade-leave-to {
         opacity: 0;
+    }
+    @media screen and (max-width:768px) and (min-width:480px){
+        .driver{
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:479px) {
+        .join-container h1{
+            font-size: 2rem;
+        }
+        .driver{
+            flex-direction: column;
+        }
     }
 </style>

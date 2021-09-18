@@ -66,27 +66,6 @@
         letter-spacing: .3rem;
         line-height: 1.6;
     }
-    /* .mission p span:nth-child(1){
-        color: #FF8B7B;
-    }
-    .mission p span:nth-child(2){
-        color: #407BFF;
-    }
-    .mission p span:nth-child(3){
-        color: #9C73FF;
-    }
-    .mission p span:nth-child(4){
-        color: #01F0FF;
-    }
-    .mission p span:nth-child(5){
-        color: #407BFF;
-    }
-    .mission p span:nth-child(6){
-        color: #FF8B7B;
-    }
-    .mission p span:nth-child(7){
-        color: #FFCEA9;
-    } */
     .mission p span{
         color: #3a6fe6;
     }
@@ -111,4 +90,55 @@
         align-items: center;
         justify-content: space-between;
     }
+    @media screen and (max-width:1200px) and (min-width:993px){
+        .container{
+            padding: 4rem 4rem;
+        }
+    }
+    @media screen and (max-width:992px) and (min-width:769px) {
+        .container{
+            padding: 4rem 2rem;
+        }
+        .mission{
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width:768px) and (min-width:480px){
+        .container{
+            padding: 4rem 0rem;
+        }
+        .mission{
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .mission p{
+            width: unset;
+        }
+        .info-cont{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width:479px){
+        .container{
+            padding: 4rem 0rem;
+        }
+        .mission{
+            flex-direction: column;
+            padding: 2rem;
+        }
+        .mission p{
+            width: unset;
+        }
+        .info-cont{
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+        
+    
 </style>

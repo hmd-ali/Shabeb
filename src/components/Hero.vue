@@ -100,4 +100,23 @@
     #learn:hover{
         color: var(--accent);
     }
+    @media screen and (max-width: 1200px) and (min-width: 993px) {
+        
+    }
+    @media screen and (max-width:768px) and (min-width:480px){
+        .social{
+            display: none;
+        }
+        .container .content h1{
+            font-size: 8rem;
+        }
+    }
+    @media screen and (max-width:479px){
+        .social{
+            display: none;
+        }
+        .container .content h1{
+            font-size: 8rem;
+        }
+    }
 </style>

@@ -43,6 +43,7 @@ export default {
 
 :root{
   --color-primary: #ffffff;
+  /* --background: #2b06ff; */
   --background: #0C0E22;
   /* --background: #2b1212; */
   --accent: #3a6fe6;
@@ -90,6 +91,7 @@ body::-webkit-scrollbar-track{
   mix-blend-mode: screen;
   height: 100vh;
   width: 100%;
+  margin: 0;
 }
 
 </style>

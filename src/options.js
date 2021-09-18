@@ -74,7 +74,7 @@ const options = {
           enable: true,
           area: 800,
         },
-        value: 300,
+        value: 200,
       },
       opacity: {
         value: 1,

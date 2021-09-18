@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <!-- <router-view v-slot="{ Component }">
       <transition name="fade">
         <component :is="Component" />
@@ -18,5 +18,5 @@ export default {
 }
 </script>
 <style>
-  
+
 </style>
