@@ -17,7 +17,7 @@
         </div>
         <div class="policies">
             <div class="policy">
-                <h1>1. Information We Collect</h1>
+                <h1>1.Information We Collect</h1>
                 <p>The following information is collected by or on behalf of Shabeb Delivery:</p>
                 <ul>
                     <li>User Profile Information: We collect and store this vendor or driver information when you create or update your Shabeb Delivery account or subscribe to our email. This may include your name, business name, [personal or business] email, [personal or business] phone number, login name and password, location information, and payment or banking information (including related payment verification information).* Please note that Shabeb Delivery cannot be used by minors (the age depends on where you reside) without the supervision of a parent or guardian. Shabeb Delivery is not liable for credit/debit card transactions performed by minors without the consent of a parent or guardian.</li>
@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="policy">
-                <h1>2. Why We Collect Information from You</h1>
+                <h1>2.Why We Collect Information from You</h1>
                 <p>In brief, Shabeb Delivery gathers personal information mainly to communicate with you and to process your orders, but additionally to help improve our products and customer service, to provide an enhanced and more personalized delivery experience and to inform vendors and drivers of special offers, updates, contests, and more.</p>
                 <p>The purposes for gathering information from you include:</p>
                 <ul>
@@ -68,7 +68,7 @@
                 </ul>
             </div>
             <div class="policy">
-                <h1>3. Information Sharing</h1>
+                <h1>3.Information Sharing</h1>
                 <p>Some of Shabeb’s services and features require that we share information with other users or at your request. We may also share your information with our affiliates and business partners for legal issues or in connection with claims or disputes.</p>
                 <p>The information Shabeb gathers may be shared with:</p>
                 <ul>
@@ -91,23 +91,23 @@
                 </ul>
             </div>
             <div class="policy">
-                <h1>4. Ads and Analytics Partners</h1>
+                <h1>4.Ads and Analytics Partners</h1>
                 <p>We use the services of our ads and analytics partners to collect data about customers and their usage of Shabeb services to track bugs, crashes, website usage, and trends. This data is used to enhance our research and development activities, provide better customer service, share relevant ads and promotions with customers, and improve our business processes. Some technologies that we rely on:</p>
                 <ul>
-                    <li><span>Cookies:</span> A "cookie" is a small data file sent to your browser from a web server and stored on your computer. We use cookies to let us know that you are a prior customer or user and to provide certain features to you. Most web browsers have an option available in the settings to prevent the use of cookies. However, if you disable this feature, certain aspects of Shabeb services may not function properly. We have relationships with third parties who may collect or receive information directly from the cookies placed by our service on your computer to assist in analyzing our business and customers. Shabeb collects and processes data with the use of Google Analytics. To learn more about Google Analytics and how your data is being used, please visit: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</li>
+                    <li><span>Cookies:</span> A "cookie" is a small data file sent to your browser from a web server and stored on your computer. We use cookies to let us know that you are a prior customer or user and to provide certain features to you. Most web browsers have an option available in the settings to prevent the use of cookies. However, if you disable this feature, certain aspects of Shabeb services may not function properly. We have relationships with third parties who may collect or receive information directly from the cookies placed by our service on your computer to assist in analyzing our business and customers. Shabeb collects and processes data with the use of Google Analytics. To learn more about Google Analytics and how your data is being used, please visit: <a class="break" href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>.</li>
                     <li><span>Action tags:</span> Our service may also use a common web technology called "action tags" (also called single pixel gifs or web beacons) to track purchase, usage and other web activity information. Action tags may be used to provide data to third parties for tracking purposes. Moreover, third parties may set their own cookies and tags through Shabeb. Shabeb has no control over such third parties or their privacy practices. If you do not want third parties to be able to use such methods, you should edit your browser settings to limit such access.</li>
                 </ul>
             </div>
             <div class="policy">
-                <h1>5. Your Choices</h1>
+                <h1>5.Your Choices</h1>
                 <p>You have the option to opt-in to receive Shabeb email notifications. Unless you subscribe and provide your email address, Shabeb will not send you company and account updates. If you are already subscribed to our email notifications, you can opt-out of them at any time by simply clicking ‘Unsubscribe’ at the bottom of the email message. Whether you are subscribed or not, Shabeb may send you important emails regarding transactions on our website or mobile application.</p>
             </div>
             <div class="policy">
-                <h1>6. Privacy Updates</h1>
+                <h1>6.Privacy Updates</h1>
                 <p>We may occasionally update this policy. If Shabeb makes any significant changes, we will notify you about the changes through our website and/or by email. After being noticed, you consent to any updates to this policy to the extent permitted under applicable law. We recommend that our users frequently review this Privacy Policy to stay up-to-date on how Shabeb is committed to your privacy. You can request an older version of our Privacy Policy at any time by sending us an email at hello@shabeb.com.</p>
             </div>
             <div class="policy">
-                <h1>7. Contact Us</h1>
+                <h1>7.Contact Us</h1>
                 <p>We are interested in hearing your feedback about this Privacy Policy. For all questions, concerns, or comments, please email us at hello@shabeb.com. Expect a reply from us within two to three business days.</p>
             </div>
             <div class="modification">
@@ -143,6 +143,7 @@
         padding: 4rem 4rem;
         color: var(--color-primary);
         padding-top: 15rem;
+        text-align: justify;
     }
     .privacy-container .title{
         margin: 3rem;
@@ -234,6 +235,23 @@
     }
     .modification h1 span{
         font-weight: 300;
+    }
+    .break{
+        word-break: break-all;
+    }
+    @media screen and (max-width:479px) {
+        .privacy-container{
+            padding: 1rem;
+            padding-top: 15rem;
+        }
+        .privacy-container .info, .privacy-container .info ul,
+        .privacy-container .policies, .privacy-container .policies .policy ul
+        {
+            padding: 1rem;
+        }
+        .privacy-container .title h1{
+            font-size: 3rem;
+        }
     }
 
 </style>

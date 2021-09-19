@@ -87,7 +87,7 @@
     .footer-container #nav{
         display: flex;
         flex-direction: column;
-        width: 30rem;
+        /* width: 30rem; */
         justify-content: center;
         align-items: left;
     }
@@ -97,6 +97,9 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    #nav{
+        width: 33%;
     }
     #nav h1{
         margin-bottom: 2rem;
@@ -115,12 +118,14 @@
         color: var(--accent);
     }
     .copyrights-container{
+        width: 33%;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .copyrights{
+        width: 33%;
         position: relative;
         text-align: center;
     }
@@ -129,6 +134,14 @@
         font-weight: 400;
         /* margin-bottom: 2rem; */
     }   
+    .partners-container{
+        width: 33%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
     .partners{
         text-align: center;
     }
@@ -221,7 +234,7 @@
             font-size: 1.5rem;
         }
         .copyrights h1{
-            font-size: 1.4rem;
+            font-size: 1rem;
         }
     }
 </style>

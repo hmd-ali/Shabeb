@@ -1,5 +1,5 @@
 <template>
-    <Header style="background:white;" />
+    <Header style="background:white;border-bottom-right-radius:3rem;border-bottom-left-radius:3rem;" />
     <div class="terms-container">
         <div class="title">
             <h1>Terms of Use</h1>
@@ -203,6 +203,18 @@
     .modification h1 span{
         font-weight: 300;
     }
-
-
+    @media screen and (max-width:479px) {
+        .terms-container{
+            padding: 1rem;
+            padding-top: 15rem;
+        }
+        .terms-container .info, .terms-container .info ul,
+        .terms-container .terms, .terms-container .terms .term sub
+        {
+            padding: 1rem;
+        }
+        .terms-container .title h1{
+            font-size: 3rem;
+        }
+    }
 </style>

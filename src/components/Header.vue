@@ -9,12 +9,14 @@
             <a href="/#join-us"><span>Join Us</span></a>
             <button @click="this.toggled = !this.toggled"><i class="fas fa-bars"></i></button>
         </div>
-        <div v-if="toggled" class="mobile-nav">
-            <a @click="this.toggled = !this.toggled" href="/#home"><span>Home</span></a>
-            <a @click="this.toggled = !this.toggled" href="/#about"><span>About</span></a>
-            <a @click="this.toggled = !this.toggled" href="/#join-us"><span>Join Us</span></a>
-            <button @click="this.toggled = !this.toggled"><i class="fas fa-times"></i></button>
-        </div>
+        <transition name="fade">
+            <div v-if="toggled" class="mobile-nav">
+                <a @click="this.toggled = !this.toggled" href="/#home"><span>Home</span></a>
+                <a @click="this.toggled = !this.toggled" href="/#about"><span>About</span></a>
+                <a @click="this.toggled = !this.toggled" href="/#join-us"><span>Join Us</span></a>
+                <button @click="this.toggled = !this.toggled"><i class="fas fa-times"></i></button>
+            </div>
+        </transition>
     </div>
 
 </template>
@@ -52,6 +54,7 @@
         background: var(--color-primary);
         border-bottom-left-radius: 4rem;
         border-bottom-right-radius: 4rem;
+        box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, .1);
     }
     .navigation{
         position: relative;
@@ -120,6 +123,12 @@
         color: blue;
         color: red;
         color: white;
+    }
+    .fade-enter-active, .fade-leave-active {
+        transition: .5s ease;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        transform: translateX(-100%);
     }
     @media screen and (max-width:768px) and (min-width:480px){
         .header-container{

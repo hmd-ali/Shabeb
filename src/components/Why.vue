@@ -56,7 +56,6 @@
     }
     .mission img{
         width: 50rem;
-        height: 50rem;
     }
     .mission p{
         font-size: 2.4rem;
@@ -128,6 +127,10 @@
         .mission{
             flex-direction: column;
             padding: 2rem;
+        }
+        .mission img{
+            width: 100%;
+
         }
         .mission p{
             width: unset;

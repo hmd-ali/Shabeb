@@ -72,6 +72,11 @@
         color: #f2f3f7;
         pointer-events: none;
     }
+    @media screen and (max-width:479px){
+        .info-container{
+            width: 30rem;
+        }
+    }
     
 
 </style>
